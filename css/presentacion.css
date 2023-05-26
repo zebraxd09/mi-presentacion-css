@@ -1,0 +1,505 @@
+/* =====================FUENTES=========================== */
+@font-face {
+    font-family: "voxel";
+    src: url(../statics/fonts/Blox2.ttf);
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url(../statics/fonts/ka1.ttf);
+}
+
+/* ====================VARIABLES========================== */
+:root {
+    --border: 4px rgb(79, 79, 79) solid;
+    --font_sz: 1.5rem;
+}
+
+/* =======================LINKS============================ */
+a:visited {
+    color: rgb(85, 25, 113);
+}
+
+a:link {
+    color: rgb(12, 84, 84);
+}
+
+/* ======================BODY============================ */
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../statics/images/skeletons.png);
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(166, 166, 166);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 92, 92);
+    border-radius: 10px;
+}
+
+/* ======================TOP-BOX=========================== */
+
+#top-cuadrado {
+    background-color: rgb(79, 79, 79);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 17%;
+    width: 100%;
+    padding: 2%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+}
+
+#titulo-nombre {
+    float: left;
+    color: #d0d0d0;
+    font-family: 'voxel';
+    padding: 0.1em;
+    font-size: 7rem;
+    /* border: 20px black;
+    border-image: url(./images/mechero.png) 30 round; */
+}
+
+#foto-yo {
+    border-radius: 2vh;
+    height: 10em;
+    width: 10em;
+}
+
+/* ====================TEMAS-DE-INTERÉS==================== */
+.cuadrados-1 {
+    background-color: rgb(149, 149, 149);
+    color: rgb(59, 59, 59);
+    display: block;
+    font-family: "pixel";
+    width: 100%;
+    padding: 1em;
+    font-size: 1.8rem;
+}
+
+.cuadrados-2 {
+    background-color: rgb(92, 92, 92);
+    color: #d0d0d0;
+    display: block;
+    font-family: "pixel";
+    width: 100%;
+    padding: 1em;
+    font-size: 1.8rem;
+}
+
+.texto-plano {
+    position: relative;
+    background-color: rgba(79, 79, 79, 0.4);
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: var(--font_sz);
+    padding: 1em;
+}
+
+.lista {
+    position: relative;
+    align-items: center;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: var(--font_sz);
+    padding: 1em;
+}
+
+.contenedor {
+    background-color: rgba(79, 79, 79, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img-pres {
+    border-radius: 2vh;
+    width: 15em;
+    filter: saturate(10%);
+    transition: 0.3s;
+    padding: 1em;
+}
+
+.img-pres:hover {
+    filter: saturate(80%);
+    width: 20em;
+}
+
+.img-pres:active {
+    transition: opacity 0.1s;
+    opacity: 60%;
+}
+
+/* ====================COMIDA-FAVORITA==================== */
+
+/* display */
+/* positioning */
+/* box-model */
+/* typography */
+/* manipulation */
+
+.img-food {
+    width: 4em;
+    border-radius: 50%;
+    filter: saturate(10%);
+    padding-top: 0.5em;
+    transition: 0.3s;
+}
+
+.img-food:hover {
+    filter: saturate(80%);
+}
+
+.img-food:active {
+    transition: opacity 0.1s;
+    opacity: 60%;
+}
+
+/* ====================VIDEOJUEGOS==================== */
+.videos {
+    margin: 1em;
+    background-color: rgba(79, 79, 79, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vg-png {
+    position: relative;
+    height: 12em;
+    padding: 2em;
+    filter: saturate(50%);
+    border-radius: 2em;
+    transition: 0.3s;
+}
+
+#botw-png {
+    background-color: rgba(79, 79, 79, 0.6);
+}
+
+.vg-gif {
+    position: relative;
+    width: 23em;
+    padding: 2em;
+    filter: saturate(10%);
+    border-radius: 4em;
+    transition: 0.3s;
+}
+
+.vg-gif:hover {
+    filter: saturate(80%);
+}
+
+/* =======================TABLA============================ */
+.cont-tabla {
+    justify-content: left;
+    border-collapse: collapse;
+    margin: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: var(--font_sz);
+}
+
+#foto-tabla {
+    width: 7em;
+}
+
+.cont-tabla thead tr {
+    background-color: rgb(94, 94, 94);
+    color: #d0d0d0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cont-tabla th,
+
+.cont-tabla td {
+    border: 2px solid #d0d0d0;
+    background-color: rgba(79, 79, 79, 0.4);
+    padding: 1em 1em;
+}
+
+.cont-tabla tbody tr td {
+    border: 2px solid rgb(94, 94, 94);
+    border: 2px solid rgb(94, 94, 94);
+}
+
+.tabl-expl {
+    text-align: justify;
+}
+
+.img-tabla {
+    border-radius: 1vw;
+    width: 5em;
+    filter: saturate(0%);
+    transition: 0.3s;
+}
+
+.img-tabla:hover {
+    filter: saturate(100%);
+    width: 6em;
+}
+
+.img-tabla:active {
+    transition: opacity 0.1s;
+    opacity: 60%;
+}
+
+/* ====================CURSO-WEB-23======================= */
+
+#temas-CW {
+    height: 30em;
+}
+
+#php {
+    width: 10em;
+    padding: 3em;
+}
+
+#php:active {
+    transition: opacity 0.1s;
+    opacity: 50%;
+}
+
+.img-cw {
+    height: 10em;
+    padding: 3em;
+}
+
+.img-cw:active {
+    transition: opacity 0.1s;
+    opacity: 50%;
+}
+
+.marco {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 50px solid black;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    border-image: url(../statics/images/border.png) 33% round;
+    filter: saturate(20%);
+    transition: 0.3s;
+    overflow: scroll;
+}
+
+.marco::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(166, 166, 166);
+}
+
+.marco::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 92, 92);
+    border-radius: 10px;
+}
+
+.marco:hover {
+    filter: saturate(80%);
+}
+
+/* =======================DIBUJO=========================== */
+#kirby-png {
+    width: 40em;
+}
+
+.dibujo {
+    filter: saturate(20%);
+    transition: 0.3s;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.dibujo:hover {
+    filter: saturate(80%);
+}
+
+.dibujo:active {
+    transition: opacity 0.01s;
+    opacity: 60%;
+}
+
+/* ---------------CABEZA------------- */
+
+.cabeza {
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    background-color: #ffafaf;
+    border: var(--border);
+    border-radius: 50%;
+}
+
+.ojo-izquierdo {
+    position: absolute;
+    margin: 0 auto;
+    height: 140px;
+    width: 70px;
+    top: 100px;
+    left: 135px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.ojo-izquierdo::after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    height: 50px;
+    width: 30px;
+    top: 0;
+    bottom: 1;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.ojo-derecho {
+    position: absolute;
+    margin: 0 auto;
+    height: 140px;
+    width: 70px;
+    top: 100px;
+    left: 300px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.ojo-derecho::after {
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    height: 50px;
+    width: 30px;
+    top: 0;
+    bottom: 1;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.sonrisa {
+    position: absolute;
+    margin: 0 auto;
+    height: 40px;
+    width: 70px;
+    bottom: 210px;
+    left: 0;
+    right: 0;
+    border: 6px solid;
+    border-radius: 50%;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.rubor {
+    position: absolute;
+    margin: 0 auto;
+    height: 50px;
+    width: 90px;
+    bottom: 230px;
+    left: 350px;
+    right: 0;
+    background-color: #ff719e;
+    border-radius: 50%;
+}
+
+.rubor::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    height: 50px;
+    width: 90px;
+    left: -350px;
+    background-color: #ff719e;
+    border-radius: 50%;
+}
+
+/* ----------------CUERPO-------------- */
+
+.cuerpo {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 65px;
+    right: 0;
+}
+
+.mano {
+    position: absolute;
+    margin: auto;
+    height: 150px;
+    width: 200px;
+    top: -300px;
+    left: -100px;
+    z-index: -1;
+    background-color: #ffafaf;
+    border: var(--border);
+    border-radius: 50%;
+}
+
+.mano::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 150px;
+    width: 200px;
+    right: -500px;
+    background-color: #ffafaf;
+    border: var(--border);
+    border-radius: 50%;
+}
+
+.pie {
+    position: absolute;
+    margin: auto;
+    height: 150px;
+    width: 250px;
+    top: -80px;
+    left: -5px;
+    z-index: -1;
+    background-color: #ff1d64;
+    border: var(--border);
+    border-radius: 50%;
+}
+
+.pie::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    height: 150px;
+    width: 250px;
+    right: -250px;
+    z-index: -1;
+    background-color: #ff1d64;
+    border: var(--border);
+    border-radius: 50%;
+}
